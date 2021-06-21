@@ -9,9 +9,13 @@ trait HasPersianAttribute
     public static function bootHasFarsiAttribute()
     {
         static::saving(function ($model) {
-            foreach ($model->getFarsiAttributes() as $attribute => $function) {
-                if (is_string($model->{$attribute})) {
-                    $model->{$attribute} = call_user_func($function, $model->{$attribute});
+            foreach ($model->getFarsiAttributes() as $attribute => $functions) {
+                if (is_string($model->{$attribute}) && !empty($functions)) {
+
+                    if(is_string($functions)) $functions = explode('|', $functions);
+                    
+                    foreach($functions as $function) 
+                        $model->{$attribute} = call_user_func($function, $model->{$attribute});
                 }
             }
         });
