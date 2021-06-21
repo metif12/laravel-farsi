@@ -4,7 +4,7 @@
 namespace Metif12\LaravelFarsi\traits;
 
 
-trait HasPersianAttribute
+trait HasFarsittribute
 {
     public static function bootHasFarsiAttribute()
     {
@@ -13,7 +13,7 @@ trait HasPersianAttribute
                 if (is_string($model->{$attribute}) && !empty($functions)) {
 
                     if(is_string($functions)) $functions = explode('|', $functions);
-                    
+
                     foreach($functions as $function) 
                         $model->{$attribute} = call_user_func($function, $model->{$attribute});
                 }

@@ -100,5 +100,7 @@ call specified hellper on atribute befor saving
 ```php
 class SomModel extends Model {
    
+   use HasFarsiAttributes;
+   
    protected $farsiAttributes = ['name'=>'farsi'];
 }
