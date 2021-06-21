@@ -1,0 +1,30 @@
+{
+    "name": "metif12/laravel-farsi",
+    "license": "MIT",
+    "description": "Laravel farsi tools",
+    "keywords": ["laravel", "persian", "farsi", "helpers", "helper", "validation", "validate"],
+    "authors": [
+        {
+            "name": "Mahdi Ramezanzadeh",
+            "email": "metif12@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Metif12\\LaravelFarsi\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "require": {
+        "illuminate/support": "^5.2|^6.0|^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Metif12\\LaravelFarsi\\LaravelFarsiServiceProvider"
+            ]
+        }
+    }
+}
