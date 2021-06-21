@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Metif12\LaravelFarsi\traits;
+namespace Metif12\LaravelFarsi\Traits;
 
 
 trait HasFarsittribute
