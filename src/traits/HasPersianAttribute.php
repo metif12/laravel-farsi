@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LaravelFarsi\traits;
+namespace Metif12\LaravelFarsi\traits;
 
 
 trait HasPersianAttribute

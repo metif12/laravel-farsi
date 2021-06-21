@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LaravelFarsi;
+namespace Metif12\LaravelFarsi;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\ServiceProvider;

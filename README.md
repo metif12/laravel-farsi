@@ -23,7 +23,7 @@ composer require metif12/laravel-farsi
 
 convert latin and arabic numbers of given text to farsi numbers
 
-```
+```php
 echo farsi_num('123') \\ Output: ۱۲۳
 ```
 
@@ -31,7 +31,7 @@ echo farsi_num('123') \\ Output: ۱۲۳
 
 convert farsi and arabic numbers of given text to latin numbers
 
-```
+```php
 echo farsi_num('۱۲۳') \\ Output: 123
 ```
 
@@ -41,21 +41,37 @@ convert specified characters defined in config file by fixing rule
 
 ### Request macros
 
-* Request::farsi($name,$default = null)
+* farsi
 
 convert result of Request::input($name,$default = null) by farsi helper
 
-* Request::oldFarsi($name,$default = null)
+```php
+Request::farsi($name,$default = null)
+```
+
+* oldFarsi
 
 convert result of Request::old($name,$default = null) by farsi helper
 
-* Request::postFarsi($name,$default = null)
+```php
+Request::oldFarsi($name,$default = null)
+```
+
+* postFarsi
 
 convert result of Request::post($name,$default = null) by farsi helper
 
-* Request::queryFarsi($name,$default = null)
+```php
+Request::postFarsi($name,$default = null)
+```
+
+* queryFarsi
 
 convert result of Request::query($name,$default = null) by farsi helper
+
+```php
+Request::queryFarsi($name,$default = null)
+```
 
 ### Validator::extention
 
@@ -81,7 +97,7 @@ persian letters and numbers are not allowed
 
 call specified hellper on atribute befor saving
 
-```
+```php
 class SomModel extends Model {
    
    protected $farsiAttributes = ['name'=>'farsi'];
