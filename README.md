@@ -4,7 +4,7 @@ laravel farsi tool package
 
 ## Requirement
 
-* Laravel 6, 7, 8
+* Laravel 8
 * PHP 7.2 >=
 
 ## Install
@@ -24,7 +24,7 @@ composer require metif12/laravel-farsi
 convert latin and arabic numbers of given text to farsi numbers
 
 ```php
-echo farsi_num('123') \\ Output: ۱۲۳
+echo farsi_num('123'); \\ Output: ۱۲۳
 ```
 
 * en_num
@@ -32,7 +32,7 @@ echo farsi_num('123') \\ Output: ۱۲۳
 convert farsi and arabic numbers of given text to latin numbers
 
 ```php
-echo farsi_num('۱۲۳') \\ Output: 123
+echo farsi_num('۱۲۳'); \\ Output: 123
 ```
 
 * farsi
@@ -46,7 +46,7 @@ convert specified characters defined in config file by fixing rule
 convert result of Request::input($name,$default = null) by farsi helper
 
 ```php
-Request::farsi($name,$default = null)
+Request::farsi($name,$default = null);
 ```
 
 * oldFarsi
@@ -54,7 +54,7 @@ Request::farsi($name,$default = null)
 convert result of Request::old($name,$default = null) by farsi helper
 
 ```php
-Request::oldFarsi($name,$default = null)
+Request::oldFarsi($name,$default = null);
 ```
 
 * postFarsi
@@ -62,7 +62,7 @@ Request::oldFarsi($name,$default = null)
 convert result of Request::post($name,$default = null) by farsi helper
 
 ```php
-Request::postFarsi($name,$default = null)
+Request::postFarsi($name,$default = null);
 ```
 
 * queryFarsi
@@ -70,7 +70,7 @@ Request::postFarsi($name,$default = null)
 convert result of Request::query($name,$default = null) by farsi helper
 
 ```php
-Request::queryFarsi($name,$default = null)
+Request::queryFarsi($name,$default = null);
 ```
 
 ### Validator::extention
